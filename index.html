@@ -4,130 +4,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <style>
-    body {
-      font-family: Arial, Trebuchet, sans-serif;
-      background-image: url(images/bodyimg.png);
-      color: white;
-    }
-
-    .top-header {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: space-around;
-    }
-
-    .title {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .search {
-      display: flex;
-      align-items: center;
-    }
-
-    .title a {
-      text-decoration: none;
-      font-size: 37px;
-      color: rgba(255, 255, 255, 0.702);
-    }
-
-    .search input {
-      width: 230px;
-      height: 20px;
-    }
-
-    .search button {
-      background-color: black;
-      border: none;
-      box-shadow: 5px 2px 5px 0px rgba(255, 255, 255, 0.535);
-      width: 70px;
-      height: 25px;
-      cursor: pointer;
-      color: rgba(255, 255, 255, 0.702);
-
-    }
-
-    .header {
-      background-color: rgba(0, 0, 0, 0.917);
-      padding: 2px;
-      color: rgba(255, 255, 255, 0.727);
-      font-size: 13px;
-      display: flex;
-      justify-content: space-around;
-      border-radius: 8px;
-      margin: 10px 0px 10px 0px;
-      flex-direction: row;
-      flex-wrap: wrap;
-      border: 1px solid rgba(255, 255, 255, 0.324);
-    }
-
-    span {
-      padding: 18px;
-
-    }
-
-    .bottom-header p {
-      margin: 0px;
-      text-align: center;
-      font-size: 15px;
-    }
-
-    .bottom-header p span {
-      color: rgba(255, 255, 0, 0.582);
-    }
-
-    .bottom-header a {
-      text-decoration: none;
-    }
-
-    .bottom-header {
-      background-color: rgba(0, 0, 0, 0.917);
-      border: 1px solid rgba(255, 255, 0, 0.613);
-      padding: 10px;
-      margin-bottom: 10px;
-      border-radius: 1px;
-    }
-
-    .main {
-      width: 100%;
-      height: 100%;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 15px;
-    }
-
-    .child {
-      width: 150px;
-      height: 280px;
-      border: 2px solid white;
-      flex-grow: 1;
-      flex-basis: auto;
-      flex-shrink: 0;
-      background-color: black;
-      
-    }
-    .child .sub-1{
-      height: 83%;
-    }
-    .child img{
-      width: 100%;
-      height: 100%;
-    }
-    .sub-2 p{
-      font-size: 13px;
-      display: block;
-      text-align: center;
-      color: rgba(255, 255, 255, 0.727);
-      font-weight: bold;
-      background-color: black;
-    }
-  </style>
+  <title>MovieRulz</title>
+  <link rel="icon" href="./images/favicon.png">
+  <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
@@ -145,15 +24,106 @@
       </div>
     </div>
     <div class="header">
-      <span>HOME</span>
-      <span>BOLLYWOOD</span>
-      <span>TELUGU</span>
-      <span>TAMIL</span>
-      <span>MALAYALAM</span>
-      <span>HOLLYWOOD</span>
-      <span>DUBBED</span>
-      <span>OTHERS</span>
-      <span>QUALITY</span>
+      <span class="dd-home">HOME</span>
+      <span class="dd-featured">FEATURED
+        <div class="dd-featured-content">
+          <a href="">Hollywood Featured</a>
+          <a href="">Bollywood Featured</a>
+          <a href="">Telugu Featured</a>
+          <a href="">Tamil Featured</a>
+          <a href="">Malayalam Featured</a>
+        </div>
+      </span>
+      <span class="dd-bollywood">BOLLYWOOD
+        <div class="dd-bollywood-content">
+          <a href="https://www.5movierulz.villas/category/bollywood-movies-2025">Bollywood Movies 2025</a>
+          <a href="https://www.5movierulz.villas/category/bollywood-movies-2024">Bollywood Movies 2024</a>
+          <a href="https://www.5movierulz.villas/category/bollywood-movies-2023">Bollywood Movies 2023</a>
+          <a href="https://www.5movierulz.villas/category/bollywood-movies-2022">Bollywood Movies 2022</a>
+          <a href="https://www.5movierulz.villas/category/bollywood-movies-2021">Bollywood Movies 2021</a>
+          <a href="https://www.5movierulz.villas/category/bollywood-movies-2020">Bollywood Movies 2020</a>
+          <a href="https://www.5movierulz.villas/category/bollywood-movies-2019">Bollywood Movies 2019</a>
+          <a href="https://www.5movierulz.villas/category/bollywood-movies-2018">Bollywood Movies 2018</a>
+          <a href="https://www.5movierulz.villas/category/bollywood-movies-2017">Bollywood Movies 2017</a>
+          <a href="https://www.5movierulz.villas/category/bollywood-movies-2016">Bollywood Movies 2016</a>
+          <a href="https://www.5movierulz.villas/category/bollywood-movies-205">Bollywood Movies 2015</a>
+        </div>
+      </span>
+      <span class="dd-telugu">TELUGU
+        <div class="dd-telugu-content">
+          <a href="https://www.5movierulz.villas/category/telugu-movies-2025">Telugu Movies 2025</a>
+          <a href="https://www.5movierulz.villas/category/telugu-movies-2024">Telugu Movies 2024</a>
+          <a href="https://www.5movierulz.villas/category/telugu-movies-2023">Telugu Movies 2023</a>
+          <a href="https://www.5movierulz.villas/category/telugu-movies-2022">Telugu Movies 2022</a>
+          <a href="https://www.5movierulz.villas/category/telugu-movies-2021">Telugu Movies 2021</a>
+          <a href="https://www.5movierulz.villas/category/telugu-movies-2020">Telugu Movies 2020</a>
+          <a href="https://www.5movierulz.villas/category/telugu-movies-2019">Telugu Movies 2019</a>
+          <a href="https://www.5movierulz.villas/category/telugu-movies-2018">Telugu Movies 2018</a>
+          <a href="https://www.5movierulz.villas/category/telugu-movies-2017">Telugu Movies 2017</a>
+          <a href="https://www.5movierulz.villas/category/telugu-movies-2016">Telugu Movies 2016</a>
+          <a href="https://www.5movierulz.villas/category/telugu-movies-2015">Telugu Movies 2015</a>
+        </div>
+      </span>
+      <span class="dd-tamil">TAMIL
+        <div class="dd-tamil-content">
+          <a href="https://www.5movierulz.villas/category/tamil-movies-2025">Tamil Movies 2025</a>
+          <a href="https://www.5movierulz.villas/category/tamil-movies-2024">Tamil Movies 2024</a>
+          <a href="https://www.5movierulz.villas/category/tamil-movies-2023">Tamil Movies 2023</a>
+          <a href="https://www.5movierulz.villas/category/tamil-movies-2022">Tamil Movies 2022</a>
+          <a href="https://www.5movierulz.villas/category/tamil-movies-2021">Tamil Movies 2021</a>
+          <a href="https://www.5movierulz.villas/category/tamil-movies-2020">Tamil Movies 2020</a>
+          <a href="https://www.5movierulz.villas/category/tamil-movies-2019">Tamil Movies 2019</a>
+          <a href="https://www.5movierulz.villas/category/tamil-movies-2018">Tamil Movies 2018</a>
+          <a href="https://www.5movierulz.villas/category/tamil-movies-2017">Tamil Movies 2017</a>
+          <a href="https://www.5movierulz.villas/category/tamil-movies-2016">Tamil Movies 2016</a>
+          <a href="https://www.5movierulz.villas/category/tamil-movies-2015">Tamil Movies 2015</a>
+        </div>
+      </span>
+      <span class="dd-malayalam">MALAYALAM
+        <div class="dd-malayalam-content">
+          <a href="https://www.5movierulz.villas/category/malayalam-movies-2025">Malayalam Movies 2025</a>
+          <a href="https://www.5movierulz.villas/category/malayalam-movies-2024">Malayalam Movies 2024</a>
+          <a href="https://www.5movierulz.villas/category/malayalam-movies-2023">Malayalam Movies 2023</a>
+          <a href="https://www.5movierulz.villas/category/malayalam-movies-2022">Malayalam Movies 2022</a>
+          <a href="https://www.5movierulz.villas/category/malayalam-movies-2020">Malayalam Movies 2021</a>
+          <a href="https://www.5movierulz.villas/category/malayalam-movies-2019">Malayalam Movies 2020</a>
+          <a href="https://www.5movierulz.villas/category/malayalam-movies-2018">Malayalam Movies 2019</a>
+          <a href="https://www.5movierulz.villas/category/malayalam-movies-2017">Malayalam Movies 2018</a>
+          <a href="https://www.5movierulz.villas/category/malayalam-movies-2016">Malayalam Movies 2017</a>
+        </div>
+      </span>
+      <span class="dd-hollywood">HOLLYWOOD
+        <div class="dd-hollywood-content">
+          <a href="https://www.5movierulz.villas/category/hollywood-movies-2025">Hollywood Movies 2025</a>
+          <a href="https://www.5movierulz.villas/category/hollywood-movies-2024">Hollywood Movies 2024</a>
+          <a href="https://www.5movierulz.villas/category/hollywood-movies-2023">Hollywood Movies 2023</a>
+          <a href="https://www.5movierulz.villas/category/hollywood-movies-2022">Hollywood Movies 2022</a>
+          <a href="https://www.5movierulz.villas/category/hollywood-movies-2021">Hollywood Movies 2021</a>
+          <a href="https://www.5movierulz.villas/category/hollywood-movies-2020">Hollywood Movies 2020</a>
+          <a href="https://www.5movierulz.villas/category/hollywood-movies-2019">Hollywood Movies 2019</a>
+          <a href="https://www.5movierulz.villas/category/hollywood-movies-2018">Hollywood Movies 2018</a>
+          <a href="https://www.5movierulz.villas/category/hollywood-movies-2017">Hollywood Movies 2017</a>
+        </div>
+      </span>
+      <span class="dd-dubbed">DUBBED
+        <div class="dd-dubbed-content">
+          <a href="https://www.5movierulz.villas/language/hindi-dubbed">Hindhi Dubbed Movies</a>
+          <a href="https://www.5movierulz.villas/language/tamil-dubbed">Tamil Dubbed Movies</a>
+          <a href="https://www.5movierulz.villas/language/telugu-dubbed">Telugu Dubbed Movies</a>
+        </div>
+      </span>
+      <span class="dd-others">OTHERS
+        <div class="dd-others-content">
+          <a href="https://www.5movierulz.villas/language/bengali">Bengali Movies</a>
+          <a href="https://www.5movierulz.villas/language/punjabi">Panjabi Movies</a>
+        </div>
+      </span>
+      <span class="dd-quality">QUALITY
+        <div class="dd-quality-content">
+          <a href="https://www.5movierulz.villas/quality/dvdrip">DVDRip Movies</a>
+          <a href="https://www.5movierulz.villas/quality/hdrip">HDRip Movies</a>
+        </div>
+      </span>
     </div>
     <div class="bottom-header">
       <p>"Bookmark Us or Use Full<a href=""><span>5Movierulz.skin</a></span>url<span>Download Movierulz App</span> and

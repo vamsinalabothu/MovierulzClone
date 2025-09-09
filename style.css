@@ -1,0 +1,220 @@
+
+body {
+  font-family: Arial, Trebuchet, sans-serif;
+  background-image: url(images/bodyimg.png);
+  color: rgba(255, 255, 255, 0.702);
+
+}
+
+.top-header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+}
+
+.title a {
+  text-decoration: none;
+  font-size: 37px;
+  color: rgba(255, 255, 255, 0.702);
+}
+
+.search input {
+  width: 230px;
+  height: 20px;
+}
+
+.search button {
+  background-color: black;
+  border: none;
+  box-shadow: 5px 2px 5px 0px rgba(255, 255, 255, 0.535);
+  width: 70px;
+  height: 25px;
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.702);
+
+}
+
+.header {
+  background-color: rgba(0, 0, 0, 0.917);
+  padding: 2px;
+  color: rgba(255, 255, 255, 0.727);
+  font-size: 13px;
+  display: flex;
+  justify-content: space-around;
+  border-radius: 8px;
+  margin: 10px 0px 10px 0px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  border: 1px solid rgba(255, 255, 255, 0.324);
+}
+
+span {
+  padding: 18px;
+
+}
+
+.bottom-header p {
+  margin: 0px;
+  text-align: center;
+  font-size: 15px;
+}
+
+.bottom-header p span {
+  color: rgba(255, 255, 0, 0.582);
+}
+
+.bottom-header a {
+  text-decoration: none;
+}
+
+.bottom-header {
+  background-color: rgba(0, 0, 0, 0.917);
+  border: 1px solid rgba(255, 255, 0, 0.613);
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 1px;
+}
+
+.dd-featured,
+.dd-bollywood,
+.dd-telugu,
+.dd-tamil,
+.dd-hollywood,
+.dd-malayalam,
+.dd-hollywood,
+.dd-dubbed,
+.dd-others,
+.dd-quality{
+  position: relative;
+}
+.dd-home:hover,
+.dd-featured:hover,
+.dd-bollywood:hover,
+.dd-telugu:hover,
+.dd-tamil:hover,
+.dd-malayalam:hover,
+.dd-hollywood:hover,
+.dd-dubbed:hover,
+.dd-others:hover,
+.dd-quality:hover
+{
+  cursor: pointer;
+  background-color: rgba(211, 211, 211, 0.231);
+  color: black;
+  background-color: lightgray;
+
+}
+.dd-featured:hover .dd-featured-content,
+.dd-bollywood:hover .dd-bollywood-content,
+.dd-telugu:hover .dd-telugu-content,
+.dd-tamil:hover .dd-tamil-content,
+.dd-malayalam:hover .dd-malayalam-content,
+.dd-hollywood:hover .dd-hollywood-content,
+.dd-dubbed:hover .dd-dubbed-content,
+.dd-others:hover .dd-others-content,
+.dd-quality:hover .dd-quality-content{
+  display: block;
+  background-color: black;
+  color: white;
+  padding: 3px;
+}
+
+.dd-featured-content,
+.dd-bollywood-content,
+.dd-telugu-content,
+.dd-tamil-content,
+.dd-malayalam-content,
+.dd-hollywood-content,
+.dd-dubbed-content,
+.dd-others-content,
+.dd-quality-content {
+  position: absolute;
+  border: 1px solid rgba(128, 128, 128, 0.513);
+  top: 52px;
+  left: -25px;
+  text-align: start;
+  display: none;
+}
+
+.dd-featured-content a:hover,
+.dd-bollywood-content a:hover,
+.dd-telugu-content a:hover,
+.dd-telugu-content a:hover,
+.dd-tamil-content a:hover,
+.dd-malayalam-content a:hover,
+.dd-hollywood-content a:hover,
+.dd-dubbed-content a:hover,
+.dd-others-content a:hover,
+.dd-quality-content a:hover {
+  background-color: black;
+  color: white;
+}
+
+.dd-featured-content a,
+.dd-bollywood-content a,
+.dd-telugu-content a,
+.dd-tamil-content a,
+.dd-malayalam-content a,
+.dd-hollywood-content a,
+.dd-dubbed-content a,
+.dd-others-content a,
+.dd-quality-content a{
+  width: 150px;
+  display: block;
+  text-decoration: none;
+  color: black;
+  background-color: lightgray;
+  border: 1px solid rgba(128, 128, 128, 0.513);
+  padding: 9px;
+}
+
+.main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.child {
+  width: 150px;
+  height: 280px;
+  border: 2px solid rgb(31, 49, 68);
+  flex-grow: 1;
+  padding: 5px;
+  flex-basis: auto;
+  flex-shrink: 0;
+  background-color: black;
+
+}
+
+.child .sub-1 {
+  height: 83%;
+}
+
+.child img {
+  width: 100%;
+  height: 100%;
+}
+
+.sub-2 p {
+  font-size: 13px;
+  display: block;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.727);
+  font-weight: bold;
+  background-color: black;
+}
